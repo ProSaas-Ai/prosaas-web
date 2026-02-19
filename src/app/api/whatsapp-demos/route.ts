@@ -6,7 +6,7 @@ const VIDEO_EXTENSIONS = ['.mp4', '.webm', '.mov'];
 
 function filenameToTitle(filename: string): string {
   // Remove extension (case-insensitive) and clean up the name
-  const withoutExt = filename.replace(/\.(mp4|webm|mov|MP4|WEBM|MOV)$/i, '');
+  const withoutExt = filename.replace(/\.(mp4|webm|mov)$/i, '');
   // Replace underscores and dashes with spaces, but preserve Hebrew characters
   const cleaned = withoutExt.replace(/[_\-]+/g, ' ').trim();
   return cleaned;
