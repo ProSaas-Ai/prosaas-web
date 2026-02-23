@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import content from '../../content/site.he.json';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,6 +47,7 @@ export default function Navbar() {
             >
               {content.nav.faq}
             </button>
+            <LanguageSwitcher lang="he" enUrl="/en" />
             <button 
               onClick={() => scrollToSection('contact')} 
               className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition"
@@ -97,6 +99,9 @@ export default function Navbar() {
               >
                 {content.nav.faq}
               </button>
+              <div className="py-2">
+                <LanguageSwitcher lang="he" enUrl="/en" />
+              </div>
               <button 
                 onClick={() => scrollToSection('contact')} 
                 className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-full"
