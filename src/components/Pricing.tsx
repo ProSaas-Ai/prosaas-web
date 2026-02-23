@@ -32,6 +32,12 @@ export default function Pricing() {
               )}
               
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
+              <div className="text-4xl font-bold text-blue-600 mb-1">
+                {plan.price}
+                {plan.price !== 'מותאם אישית' && (
+                  <span className="text-lg text-gray-500 font-normal"> {content.pricing.monthly}</span>
+                )}
+              </div>
               <p className="text-gray-600 mb-4">{plan.description}</p>
               
               <ul className="space-y-3 mb-8">
