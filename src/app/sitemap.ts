@@ -9,10 +9,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     // Hebrew (default) pages – highest priority
     { url: siteUrl, priority: 1.0, changeFrequency: 'weekly' as const },
-    { url: `${siteUrl}/he/מערכת-ai-לעסקים`, priority: 0.9, changeFrequency: 'monthly' as const },
-    { url: `${siteUrl}/he/crm-חכם`, priority: 0.9, changeFrequency: 'monthly' as const },
-    { url: `${siteUrl}/he/בוט-וואטסאפ-לעסקים`, priority: 0.9, changeFrequency: 'monthly' as const },
-    { url: `${siteUrl}/he/בלוג`, priority: 0.85, changeFrequency: 'weekly' as const },
+    { url: encodeURI(`${siteUrl}/he/מערכת-ai-לעסקים`), priority: 0.9, changeFrequency: 'monthly' as const },
+    { url: encodeURI(`${siteUrl}/he/crm-חכם`), priority: 0.9, changeFrequency: 'monthly' as const },
+    { url: encodeURI(`${siteUrl}/he/בוט-וואטסאפ-לעסקים`), priority: 0.9, changeFrequency: 'monthly' as const },
+    { url: encodeURI(`${siteUrl}/he/בלוג`), priority: 0.85, changeFrequency: 'weekly' as const },
 
     // English homepage and top-level pages
     { url: `${siteUrl}/en`, priority: 0.9, changeFrequency: 'weekly' as const },
@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/accessibility`, priority: 0.4, changeFrequency: 'yearly' as const },
   ]
 
-  // Dynamic English blog post pages
+  // Dynamic English blog post pages (ASCII slugs — no encoding needed)
   const enBlogPages = getAllBlogSlugs().map(slug => ({
     url: `${siteUrl}/blog/${slug}`,
     priority: 0.7,
@@ -48,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Dynamic Hebrew blog post pages
   const heBlogPages = getAllBlogSlugsHe().map(slug => ({
-    url: `${siteUrl}/he/בלוג/${slug}`,
+    url: encodeURI(`${siteUrl}/he/בלוג/${slug}`),
     priority: 0.75,
     changeFrequency: 'monthly' as const,
   }))
