@@ -2,7 +2,6 @@ import SEOPageLayout from '../components/SEOPageLayout';
 import Hero from '../components/Hero';
 import WhatIs from '../components/WhatIs';
 import Features from '../components/Features';
-import Pricing from '../components/Pricing';
 import VoiceDemo from '../components/VoiceDemo';
 import CallDemos from '../components/CallDemos';
 import WhatsAppDemos from '../components/WhatsAppDemos';
@@ -16,7 +15,6 @@ export default function Home() {
       <Hero />
       <WhatIs />
       <Features />
-      <Pricing />
       <VoiceDemo />
       <CallDemos />
       <WhatsAppDemos />

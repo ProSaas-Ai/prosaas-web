@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import SEOPageLayout from '../../components/SEOPageLayout'
 import StructuredData from '../../components/StructuredData'
+import ContactFormEn from '../../components/ContactFormEn'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://prosaas.co.il'
 
@@ -111,7 +111,7 @@ export default function EnglishHomePage() {
       <StructuredData type="software" />
 
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-blue-100 pt-16 px-4">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-blue-100 pt-16 px-4">
         <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse" />
           <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse" />
@@ -200,78 +200,14 @@ export default function EnglishHomePage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="py-20 px-4 bg-white" id="pricing">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pricing</h2>
-            <p className="text-lg text-gray-600">One platform. Full technology.</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Starter',
-                price: '₪600',
-                desc: 'For businesses wanting order and control',
-                features: ['All features included', 'Customisation per business type'],
-                popular: false,
-              },
-              {
-                name: 'Business',
-                price: '₪1,500',
-                desc: 'For businesses wanting smart automation',
-                features: ['All features included', 'Advanced workflows', 'Personal customisations'],
-                popular: true,
-              },
-              {
-                name: 'Enterprise',
-                price: 'Custom',
-                desc: 'For organisations with complex needs',
-                features: ['Large scale', 'Dedicated workflows'],
-                popular: false,
-              },
-            ].map((plan, i) => (
-              <div
-                key={i}
-                className={`relative rounded-2xl p-8 border-2 ${plan.popular ? 'border-blue-500 shadow-xl' : 'border-gray-200 shadow-sm'}`}
-              >
-                {plan.popular && (
-                  <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-500 text-white text-xs font-bold px-4 py-1 rounded-full">
-                    Most Popular ⭐
-                  </span>
-                )}
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
-                <div className="text-4xl font-bold text-blue-600 mb-2">
-                  {plan.price}
-                  {plan.price !== 'Custom' && <span className="text-lg text-gray-500 font-normal"> / month</span>}
-                </div>
-                <p className="text-gray-600 mb-6">{plan.desc}</p>
-                <ul className="space-y-2 mb-8">
-                  {plan.features.map((feat, fi) => (
-                    <li key={fi} className="flex items-center gap-2 text-gray-700">
-                      <span className="text-blue-500">✓</span> {feat}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="#contact"
-                  className={`block text-center px-6 py-3 rounded-xl font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${plan.popular ? 'bg-blue-600 text-white hover:bg-blue-700' : 'border-2 border-blue-600 text-blue-600 hover:bg-blue-50'}`}
-                >
-                  Get a Personal Demo
-                </a>
-              </div>
-            ))}
-          </div>
-          <p className="text-center text-gray-400 text-sm mt-6">* Outgoing calls billed separately</p>
-        </div>
-      </section>
-
       {/* Integrations */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Integrations</h2>
-          <p className="text-gray-600 mb-10">Works with the tools you already use</p>
-          <div className="flex flex-wrap justify-center gap-6">
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Integrations</h2>
+            <p className="text-lg text-gray-600">Works with the tools you already use</p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-8">
             {[
               { name: 'Twilio', desc: 'Calls & telephony' },
               { name: 'WhatsApp', desc: 'Messaging & replies' },
@@ -279,9 +215,9 @@ export default function EnglishHomePage() {
               { name: 'Webhooks', desc: 'Custom connections' },
               { name: 'Email', desc: 'Notifications & reminders' },
             ].map((int, i) => (
-              <div key={i} className="bg-white rounded-xl shadow-sm px-6 py-4 text-center min-w-[120px]">
-                <div className="font-bold text-gray-900">{int.name}</div>
-                <div className="text-xs text-gray-500 mt-1">{int.desc}</div>
+              <div key={i} className="flex flex-col items-center p-4 sm:p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition text-center">
+                <div className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">{int.name}</div>
+                <div className="text-xs sm:text-sm text-gray-500">{int.desc}</div>
               </div>
             ))}
           </div>
@@ -298,12 +234,20 @@ export default function EnglishHomePage() {
           </div>
           <div className="space-y-4">
             {faqItems.map((item, i) => (
-              <details key={i} className="bg-gray-50 rounded-xl p-6 group">
-                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+              <details key={i} className="bg-gray-50 rounded-xl overflow-hidden shadow-sm group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
                   {item.question}
-                  <span className="text-blue-600 text-xl ml-4" aria-hidden="true">+</span>
+                  <svg
+                    className="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180 flex-shrink-0 ml-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </summary>
-                <p className="mt-4 text-gray-600 leading-relaxed">{item.answer}</p>
+                <p className="px-6 pb-6 text-gray-600 leading-relaxed">{item.answer}</p>
               </details>
             ))}
           </div>
@@ -312,59 +256,56 @@ export default function EnglishHomePage() {
 
       {/* Contact */}
       <section className="py-20 px-4 bg-gradient-to-br from-blue-50 via-white to-blue-100" id="contact">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
-          <p className="text-lg text-gray-600 mb-10">
-            Businesses lose customers due to slow response. At ProSaaS we do things differently.
-            More control. Zero missed leads. Maximum customers.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/972557270844?text=Hi%2C%20I%27d%20love%20to%20learn%20more%20about%20ProSaaS"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 bg-green-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-green-600 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500"
-              aria-label="Chat with ProSaaS on WhatsApp"
-            >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-              </svg>
-              Chat on WhatsApp
-            </a>
-            <a
-              href="mailto:support@prosaas.pro"
-              className="flex items-center justify-center gap-3 bg-gray-800 text-white px-8 py-4 rounded-xl font-semibold hover:bg-gray-900 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500"
-              aria-label="Send email to ProSaaS"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              Email Us
-            </a>
-            <a
-              href="tel:0549750505"
-              className="flex items-center justify-center gap-3 bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-              aria-label="Call ProSaaS"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              Call Us
-            </a>
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
+            <p className="text-lg text-gray-600">
+              Businesses lose customers due to slow response. At ProSaaS we do things differently.
+              More control. Zero missed leads. Maximum customers.
+            </p>
           </div>
-          <div className="mt-10 grid md:grid-cols-3 gap-6 text-left">
-            {[
-              { label: 'AI Call Center', href: '/ai-call-center' },
-              { label: 'WhatsApp Automation', href: '/whatsapp-automation' },
-              { label: 'AI CRM', href: '/ai-crm' },
-              { label: 'AI Answering Service', href: '/ai-answering-service' },
-              { label: 'Blog', href: '/blog' },
-              { label: 'About', href: '/about' },
-            ].map((link, i) => (
-              <Link key={i} href={link.href} className="text-blue-600 hover:text-blue-800 underline text-sm">
-                {link.label}
-              </Link>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <ContactFormEn />
+            <div className="flex flex-col justify-center space-y-6">
+              <a
+                href="https://wa.me/972557270844?text=Hi%2C%20I%27d%20love%20to%20learn%20more%20about%20ProSaaS"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 bg-green-500 text-white p-6 rounded-2xl hover:bg-green-600 transition"
+                aria-label="Chat with ProSaaS on WhatsApp"
+              >
+                <svg className="w-8 h-8 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                <span className="text-lg font-semibold">Chat on WhatsApp</span>
+              </a>
+              <a
+                href="mailto:support@prosaas.pro"
+                className="flex items-center gap-4 bg-gray-800 text-white p-6 rounded-2xl hover:bg-gray-900 transition"
+                aria-label="Send email to ProSaaS"
+              >
+                <svg className="w-8 h-8 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <div>
+                  <span className="text-lg font-semibold block">Email Us</span>
+                  <span className="text-gray-300 text-sm">support@prosaas.pro</span>
+                </div>
+              </a>
+              <a
+                href="tel:0549750505"
+                className="flex items-center gap-4 bg-blue-600 text-white p-6 rounded-2xl hover:bg-blue-700 transition"
+                aria-label="Call ProSaaS"
+              >
+                <svg className="w-8 h-8 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <div>
+                  <span className="text-lg font-semibold block">Call Us</span>
+                  <span className="text-blue-100 text-sm">0549750505</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>
