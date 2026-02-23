@@ -24,6 +24,28 @@ export default function Footer() {
           </div>
         </div>
         
+        <div className="mt-8 pt-8 border-t border-gray-800">
+          <p className="text-gray-500 text-sm mb-3 text-center">English Pages</p>
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+            {[
+              { text: 'AI Call Center', url: '/ai-call-center' },
+              { text: 'WhatsApp Automation', url: '/whatsapp-automation' },
+              { text: 'AI CRM', url: '/ai-crm' },
+              { text: 'AI Answering Service', url: '/ai-answering-service' },
+              { text: 'Blog', url: '/blog' },
+              { text: 'About', url: '/about' },
+            ].map((link, index) => (
+              <Link
+                key={index}
+                href={link.url}
+                className="text-gray-500 hover:text-gray-300 transition text-sm"
+              >
+                {link.text}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
           {content.footer.copyright}
         </div>
