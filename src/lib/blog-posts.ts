@@ -94,7 +94,7 @@ If your business receives inquiries by phone or WhatsApp and you're not respondi
   },
   {
     slug: 'ai-vs-human-receptionist',
-    title: 'AI vs Human Receptionist: What\'s Better for Your Business?',
+    title: "AI vs Human Receptionist: What's Better for Your Business?",
     description: 'Comparing the real costs, capabilities, and limitations of AI receptionists versus human receptionists to help you make the right choice for your business.',
     date: '2024-11-20',
     readTime: '8 min read',
