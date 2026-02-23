@@ -2,14 +2,36 @@ import type { Metadata } from "next";
 import "./globals.css";
 import content from "../../content/site.he.json";
 import AccessibilityWidget from "../components/AccessibilityWidget";
+import StructuredData from "../components/StructuredData";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://prosaas.co.il'
 
 export const metadata: Metadata = {
-  // metadataBase is required for absolute URLs in Open Graph images
-  // Set NEXT_PUBLIC_SITE_URL environment variable in production
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://prosaas.co.il'),
-  title: content.site.title,
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: content.site.title,
+    template: `%s | ProSaaS`,
+  },
   description: content.site.description,
-  keywords: content.site.keywords,
+  keywords: "ProSaaS, פרוסאס, ai call center system, whatsapp automation for business, crm with ai, ai answering service, מערכת מענה אוטומטי לעסקים, מערכת AI לשיחות, CRM חכם לעסקים, בוט וואטסאפ, ניהול לידים, AI לעסקים קטנים",
+  alternates: {
+    canonical: siteUrl,
+    languages: {
+      'he': siteUrl,
+      'en': `${siteUrl}/en`,
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
@@ -25,6 +47,9 @@ export const metadata: Metadata = {
     description: content.site.description,
     type: "website",
     locale: "he_IL",
+    alternateLocale: "en_US",
+    siteName: "ProSaaS",
+    url: siteUrl,
     images: [
       {
         url: '/opengraph-image.png',
@@ -39,6 +64,10 @@ export const metadata: Metadata = {
     title: content.site.title,
     description: content.site.description,
     images: ['/opengraph-image.png'],
+    site: '@ProSaaS',
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
   },
 };
 
@@ -56,6 +85,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <StructuredData type="organization" />
+        <StructuredData type="software" />
       </head>
       <body className="font-sans antialiased">
         {children}

@@ -1,0 +1,141 @@
+interface OrganizationSchemaProps {
+  type: 'organization'
+}
+interface SoftwareSchemaProps {
+  type: 'software'
+}
+interface FAQSchemaProps {
+  type: 'faq'
+  items: Array<{ question: string; answer: string }>
+}
+interface ArticleSchemaProps {
+  type: 'article'
+  headline: string
+  description: string
+  datePublished: string
+  url: string
+}
+
+type StructuredDataProps = OrganizationSchemaProps | SoftwareSchemaProps | FAQSchemaProps | ArticleSchemaProps
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://prosaas.co.il'
+
+function getOrganizationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'ProSaaS',
+    url: siteUrl,
+    logo: `${siteUrl}/logo.svg`,
+    description: 'ProSaaS – AI-powered CRM, WhatsApp automation, and voice bot platform for businesses. Manage leads, calls, and customer communications automatically.',
+    email: 'support@prosaas.pro',
+    telephone: '+972549750505',
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'IL',
+    },
+    sameAs: [
+      'https://wa.me/972557270844',
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      email: 'support@prosaas.pro',
+      telephone: '+972549750505',
+      availableLanguage: ['Hebrew', 'English'],
+    },
+  }
+}
+
+function getSoftwareSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'ProSaaS',
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Web',
+    url: siteUrl,
+    description: 'AI-powered CRM with WhatsApp automation and voice bot for businesses. 24/7 automated lead management and customer communication.',
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'ILS',
+      lowPrice: '600',
+      highPrice: '1500',
+      offerCount: '3',
+    },
+    featureList: [
+      'AI Voice Bot',
+      'WhatsApp Automation',
+      'CRM System',
+      'Lead Management',
+      'Automated Call Handling',
+      '24/7 Availability',
+    ],
+    inLanguage: ['he', 'en'],
+    provider: {
+      '@type': 'Organization',
+      name: 'ProSaaS',
+      url: siteUrl,
+    },
+  }
+}
+
+function getFAQSchema(items: Array<{ question: string; answer: string }>) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map(item => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  }
+}
+
+function getArticleSchema(props: ArticleSchemaProps) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: props.headline,
+    description: props.description,
+    datePublished: props.datePublished,
+    url: props.url,
+    author: {
+      '@type': 'Organization',
+      name: 'ProSaaS',
+      url: siteUrl,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'ProSaaS',
+      url: siteUrl,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteUrl}/logo.svg`,
+      },
+    },
+  }
+}
+
+export default function StructuredData(props: StructuredDataProps) {
+  let schema
+  if (props.type === 'organization') {
+    schema = getOrganizationSchema()
+  } else if (props.type === 'software') {
+    schema = getSoftwareSchema()
+  } else if (props.type === 'faq') {
+    schema = getFAQSchema(props.items)
+  } else {
+    schema = getArticleSchema(props)
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
