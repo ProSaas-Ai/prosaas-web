@@ -2,9 +2,12 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'דף לא נמצא | ProSaaS',
-  description: 'הדף שחיפשת לא קיים. חזרו לדף הבית של ProSaaS.',
+  title: 'דף לא נמצא | ProSaaS - פרוסאס',
+  description: 'הדף שחיפשת לא קיים. חזרו לדף הבית של ProSaaS - פרוסאס, מערכת CRM, WhatsApp ובוט שיחות AI לעסקים.',
   robots: { index: false, follow: true },
+  alternates: {
+    canonical: '/',
+  },
 }
 
 export default function NotFound() {

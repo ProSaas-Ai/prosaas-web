@@ -5,7 +5,7 @@ import SEOPageLayout from '../../../components/SEOPageLayout'
 export const metadata: Metadata = {
   title: 'CRM חכם לעסקים | פרוסאס – ניהול לידים ולקוחות עם AI',
   description: 'פרוסאס מציעה CRM חכם לעסקים עם AI מובנה — ניהול לידים אוטומטי, מעקב אחר לקוחות, ותזכורות פולואפ. כל הכלים במקום אחד, בעברית.',
-  keywords: 'CRM חכם, CRM לעסקים, ניהול לידים, מערכת CRM, CRM AI, ניהול לקוחות',
+  keywords: 'CRM חכם, CRM לעסקים, ניהול לידים, מערכת CRM, CRM AI, ניהול לקוחות, פרוסאס, פרו סאס, ProSaaS, מוקד שיחות',
   alternates: { canonical: '/he/smart-crm' },
   openGraph: {
     title: 'CRM חכם לעסקים | פרוסאס',

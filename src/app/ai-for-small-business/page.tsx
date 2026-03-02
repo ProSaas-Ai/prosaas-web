@@ -6,7 +6,7 @@ import StructuredData from '../../components/StructuredData'
 export const metadata: Metadata = {
   title: 'AI for Small Business | ProSaaS – Automate Communications Without Enterprise Costs',
   description: 'ProSaaS brings enterprise-level AI automation to small businesses. Automate calls, WhatsApp, and lead management starting from ₪600/month – no tech team required.',
-  keywords: 'ai for small business, small business automation, affordable ai crm, ai tools small business',
+  keywords: 'ai for small business, small business automation, affordable ai crm, ai tools small business, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: { canonical: '/ai-for-small-business' },
   openGraph: {
     title: 'AI for Small Business | ProSaaS',

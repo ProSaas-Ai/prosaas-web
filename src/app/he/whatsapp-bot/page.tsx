@@ -5,7 +5,7 @@ import SEOPageLayout from '../../../components/SEOPageLayout'
 export const metadata: Metadata = {
   title: 'בוט וואטסאפ לעסקים | פרוסאס – מענה אוטומטי 24/7',
   description: 'פרוסאס מספקת בוט וואטסאפ חכם לעסקים — מענה אוטומטי להודעות, סינון לידים ותיאום פגישות, 24 שעות ביממה. הפסיקו לפספס לקוחות.',
-  keywords: 'בוט וואטסאפ לעסקים, אוטומציה וואטסאפ, וואטסאפ בוט, מענה אוטומטי וואטסאפ',
+  keywords: 'בוט וואטסאפ לעסקים, אוטומציה וואטסאפ, וואטסאפ בוט, מענה אוטומטי וואטסאפ, פרוסאס, פרו סאס, ProSaaS',
   alternates: { canonical: '/he/whatsapp-bot' },
   openGraph: {
     title: 'בוט וואטסאפ לעסקים | פרוסאס',

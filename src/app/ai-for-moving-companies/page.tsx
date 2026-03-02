@@ -6,7 +6,7 @@ import StructuredData from '../../components/StructuredData'
 export const metadata: Metadata = {
   title: 'AI for Moving Companies | ProSaaS – Automate Your Moving Business Calls',
   description: 'Helping moving companies handle more inquiries, book more jobs, and manage customer communications automatically with ProSaaS AI.',
-  keywords: 'ai for moving companies, moving company automation, moving company crm, automated booking moving',
+  keywords: 'ai for moving companies, moving company automation, moving company crm, automated booking moving, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: { canonical: '/ai-for-moving-companies' },
   openGraph: {
     title: 'AI for Moving Companies | ProSaaS',

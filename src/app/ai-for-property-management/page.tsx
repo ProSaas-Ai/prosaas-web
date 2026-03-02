@@ -6,7 +6,7 @@ import StructuredData from '../../components/StructuredData'
 export const metadata: Metadata = {
   title: 'AI for Property Management | ProSaaS – Automate Tenant Communication & Maintenance Requests',
   description: 'Property managers use ProSaaS to handle tenant inquiries, maintenance requests, and rent reminders automatically, saving hours every week.',
-  keywords: 'ai for property management, property management automation, tenant communication ai, property management crm',
+  keywords: 'ai for property management, property management automation, tenant communication ai, property management crm, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: { canonical: '/ai-for-property-management' },
   openGraph: {
     title: 'AI for Property Management | ProSaaS',

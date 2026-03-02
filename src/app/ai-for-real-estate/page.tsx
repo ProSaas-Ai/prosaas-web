@@ -6,7 +6,7 @@ import StructuredData from '../../components/StructuredData'
 export const metadata: Metadata = {
   title: 'AI for Real Estate Agents | ProSaaS – Automate Lead Management & Property Inquiries',
   description: 'Real estate agents using ProSaaS never miss a property inquiry. Our AI handles calls, WhatsApp messages, and books viewings automatically.',
-  keywords: 'ai for real estate agents, real estate automation, property inquiry bot, real estate crm ai, lead management real estate',
+  keywords: 'ai for real estate agents, real estate automation, property inquiry bot, real estate crm ai, lead management real estate, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: { canonical: '/ai-for-real-estate' },
   openGraph: {
     title: 'AI for Real Estate Agents | ProSaaS',

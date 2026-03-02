@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'About ProSaaS | AI-Powered Business Communication Platform',
   description: 'Learn about ProSaaS – the Israeli-built AI platform that combines CRM, WhatsApp automation, and voice bots to help businesses manage every customer interaction automatically.',
   alternates: { canonical: '/about', languages: { 'en': '/about', 'he': '/he/about' } },
+  keywords: 'ProSaaS, PROSAAS, PRO SAAS, פרוסאס, פרו סאס, about ProSaaS, AI business platform, CRM AI, call center AI',
   openGraph: {
     title: 'About ProSaaS',
     description: 'The Israeli-built AI platform for business communication automation.',
