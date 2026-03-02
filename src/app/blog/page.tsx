@@ -6,6 +6,7 @@ import { blogPosts } from '../../lib/blog-posts'
 export const metadata: Metadata = {
   title: 'ProSaaS Blog | AI, CRM & Business Automation Insights',
   description: 'Expert insights on AI automation, CRM, WhatsApp marketing, and lead management for businesses. Practical guides and data-driven articles from the ProSaaS team.',
+  keywords: 'ProSaaS blog, PROSAAS, PRO SAAS, AI blog, CRM blog, WhatsApp automation blog, lead management, business automation',
   alternates: {
     canonical: '/blog',
     languages: {

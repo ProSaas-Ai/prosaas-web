@@ -6,7 +6,7 @@ import StructuredData from '../../components/StructuredData'
 export const metadata: Metadata = {
   title: 'AI for Law Firms | ProSaaS – Automated Client Intake & Communication',
   description: 'Law firms use ProSaaS to automate new client intake, answer common questions, and schedule consultations — without adding admin staff.',
-  keywords: 'ai for law firms, law firm automation, legal client intake ai, law firm crm, automated legal receptionist',
+  keywords: 'ai for law firms, law firm automation, legal client intake ai, law firm crm, automated legal receptionist, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: { canonical: '/ai-for-law-firms' },
   openGraph: {
     title: 'AI for Law Firms | ProSaaS',

@@ -46,4 +46,5 @@ next-env.d.ts
 
 # lock files (optional - can be kept for reproducible builds)
 package-lock.json
+yarn.lock
 node_modules/

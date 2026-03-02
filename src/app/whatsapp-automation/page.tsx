@@ -6,7 +6,7 @@ import StructuredData from '../../components/StructuredData'
 export const metadata: Metadata = {
   title: 'WhatsApp Automation for Business | ProSaaS – AI-Powered WhatsApp Bot',
   description: 'Automate your WhatsApp business communications with ProSaaS. Our AI bot handles inquiries, qualifies leads, and routes conversations 24/7 – so you never miss a customer message.',
-  keywords: 'whatsapp automation for business, whatsapp bot, whatsapp AI, automated whatsapp messages, whatsapp CRM integration',
+  keywords: 'whatsapp automation for business, whatsapp bot, whatsapp AI, automated whatsapp messages, whatsapp CRM integration, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: {
     canonical: '/whatsapp-automation',
   },

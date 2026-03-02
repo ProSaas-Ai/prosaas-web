@@ -6,7 +6,7 @@ import StructuredData from '../../components/StructuredData'
 export const metadata: Metadata = {
   title: 'AI CRM System | ProSaaS – Smart CRM with Built-In AI Automation',
   description: 'ProSaaS AI CRM combines contact management, conversation history, automated follow-ups, and AI-powered insights in one platform designed for small and medium businesses.',
-  keywords: 'crm with ai, ai crm system, smart crm, ai customer management, automated crm, lead management ai',
+  keywords: 'crm with ai, ai crm system, smart crm, ai customer management, automated crm, lead management ai, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: {
     canonical: '/ai-crm',
   },

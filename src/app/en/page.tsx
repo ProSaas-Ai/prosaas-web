@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     'ProSaaS connects leads, customers, WhatsApp and phone calls into one AI system that manages, records and converts inquiries automatically. No missed leads. No chaos.',
   keywords:
-    'ProSaaS, AI CRM, WhatsApp bot, AI call center, lead management, business automation, voice bot, answering service',
+    'ProSaaS, PROSAAS, PRO SAAS, פרוסאס, פרו סאס, AI CRM, WhatsApp bot, AI call center, lead management, business automation, voice bot, answering service, prosaas.website',
   alternates: {
     canonical: `${siteUrl}/en`,
     languages: {

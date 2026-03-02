@@ -6,7 +6,7 @@ import StructuredData from '../../components/StructuredData'
 export const metadata: Metadata = {
   title: 'AI Answering Service | ProSaaS – 24/7 Automated Phone Answering',
   description: 'Replace expensive answering services with ProSaaS AI. Our intelligent voice bot answers every call, collects information, and notifies you instantly — available 24/7 without staff costs.',
-  keywords: 'ai answering service, automated answering service, 24/7 phone answering, ai receptionist, virtual answering service',
+  keywords: 'ai answering service, automated answering service, 24/7 phone answering, ai receptionist, virtual answering service, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: { canonical: '/ai-answering-service' },
   openGraph: {
     title: 'AI Answering Service | ProSaaS',

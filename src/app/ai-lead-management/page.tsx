@@ -6,7 +6,7 @@ import StructuredData from '../../components/StructuredData'
 export const metadata: Metadata = {
   title: 'AI Lead Management | ProSaaS – Never Lose a Lead Again',
   description: 'ProSaaS AI Lead Management captures, qualifies, and follows up on every lead automatically. Build a pipeline that converts while you focus on closing deals.',
-  keywords: 'ai lead management, automated lead management, lead tracking ai, crm lead management, lead qualification automation',
+  keywords: 'ai lead management, automated lead management, lead tracking ai, crm lead management, lead qualification automation, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: { canonical: '/ai-lead-management' },
   openGraph: {
     title: 'AI Lead Management | ProSaaS',

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
       'en': `${siteUrl}/about`,
     },
   },
+  keywords: 'פרוסאס, פרו סאס, ProSaaS, PRO SAAS, אודות פרוסאס, מוקד שיחות AI, CRM חכם, בינה מלאכותית לעסקים',
   openGraph: {
     title: 'אודות פרוסאס',
     description: 'הפלטפורמה הישראלית לאוטומציה של תקשורת עסקית מבוססת AI.',

@@ -6,7 +6,7 @@ import StructuredData from '../../components/StructuredData'
 export const metadata: Metadata = {
   title: 'AI Call Center Software | ProSaaS – Intelligent Voice Bot for Business',
   description: 'ProSaaS provides AI-powered call center software with a natural-sounding voice bot that handles inbound calls 24/7, transcribes conversations, and syncs everything to your CRM automatically.',
-  keywords: 'ai call center system, AI call center software, automated call center, voice bot, AI answering service, business phone automation',
+  keywords: 'ai call center system, AI call center software, automated call center, voice bot, AI answering service, business phone automation, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: {
     canonical: '/ai-call-center',
   },

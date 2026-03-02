@@ -6,7 +6,7 @@ import StructuredData from '../../components/StructuredData'
 export const metadata: Metadata = {
   title: 'AI for Dental Clinics | ProSaaS – Smart Appointment Booking & Patient Communications',
   description: 'ProSaaS helps dental clinics automate appointment booking, patient reminders, and inquiry handling with an AI voice bot and WhatsApp automation.',
-  keywords: 'ai for dental clinics, dental clinic automation, dental appointment bot, dental crm, patient communication automation',
+  keywords: 'ai for dental clinics, dental clinic automation, dental appointment bot, dental crm, patient communication automation, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: { canonical: '/ai-for-dental-clinics' },
   openGraph: {
     title: 'AI for Dental Clinics | ProSaaS',

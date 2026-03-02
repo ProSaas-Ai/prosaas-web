@@ -6,7 +6,7 @@ import StructuredData from '../../components/StructuredData'
 export const metadata: Metadata = {
   title: 'AI for Cleaning Companies | ProSaaS – Automate Bookings & Customer Follow-ups',
   description: 'Cleaning companies use ProSaaS to handle booking inquiries, quote requests, and appointment reminders automatically — 24/7.',
-  keywords: 'ai for cleaning companies, cleaning company automation, cleaning service booking bot, cleaning company crm',
+  keywords: 'ai for cleaning companies, cleaning company automation, cleaning service booking bot, cleaning company crm, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: { canonical: '/ai-for-cleaning-companies' },
   openGraph: {
     title: 'AI for Cleaning Companies | ProSaaS',
