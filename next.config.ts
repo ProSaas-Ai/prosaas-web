@@ -2,21 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   async redirects() {
-    return [
-      // Redirect www to non-www (canonical)
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.prosaas.website' }],
-        destination: 'https://prosaas.website/:path*',
-        permanent: true,
-      },
-      // Permanent redirect /he to / (Hebrew is the default)
-      {
-        source: '/he',
-        destination: '/',
-        permanent: true,
-      },
-    ]
+    return []
   },
   async headers() {
     return [
