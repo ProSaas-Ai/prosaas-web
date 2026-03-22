@@ -24,7 +24,7 @@ interface ArticleSchemaProps {
 
 type StructuredDataProps = WebSiteSchemaProps | OrganizationSchemaProps | SoftwareSchemaProps | LocalBusinessSchemaProps | FAQSchemaProps | ArticleSchemaProps
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.prosaas.website'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://prosaas.website'
 
 function getWebSiteSchema() {
   return {
