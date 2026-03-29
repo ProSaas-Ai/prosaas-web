@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     title: 'AI for Law Firms | ProSaaS',
     description: 'Automate client intake, answer common questions, and schedule consultations with AI.',
     type: 'website',
+    url: '/ai-for-law-firms',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'AI for Law Firms | ProSaaS' }],
   },
 }
 

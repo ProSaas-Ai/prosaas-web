@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import SEOPageLayout from '../../../components/SEOPageLayout'
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://prosaas.website'
+import { siteUrl } from '@/lib/site-url'
 
 export const metadata: Metadata = {
   title: 'בוט ווצאפ חכם לעסקים | פרוסאס – נציג לוואטסאפ אוטומטי 24/7',
@@ -20,12 +19,14 @@ export const metadata: Metadata = {
     description: 'נציג לוואטסאפ אוטומטי — מענה מיידי 24/7, לכידת לידים וסינון אוטומטי.',
     type: 'website',
     locale: 'he_IL',
+    url: `${siteUrl}/he/whatsapp-bot`,
+    images: [{ url: `${siteUrl}/opengraph-image.png`, width: 1200, height: 630, alt: 'בוט ווצאפ חכם לעסקים | פרוסאס' }],
   },
 }
 
 export default function HeWhatsAppBotPage() {
   return (
-    <SEOPageLayout lang="he">
+    <SEOPageLayout lang="he" alternateUrl="/whatsapp-automation">
       <div className="bg-gradient-to-br from-green-50 via-white to-blue-50" dir="rtl">
         <section className="max-w-6xl mx-auto px-4 py-16 md:py-24">
           <div className="max-w-3xl">

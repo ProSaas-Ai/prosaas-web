@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import SEOPageLayout from '../../../components/SEOPageLayout'
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://prosaas.website'
+import { siteUrl } from '@/lib/site-url'
 
 export const metadata: Metadata = {
   title: 'נציג שיחות AI | פרוסאס – נציג טלפוני חכם ומענה אוטומטי לעסקים',
@@ -20,12 +19,14 @@ export const metadata: Metadata = {
     description: 'נציג שיחות AI שעונה לכל שיחה נכנסת 24/7, מנהל שיחה טבעית בעברית ושומר הכל ב-CRM.',
     type: 'website',
     locale: 'he_IL',
+    url: `${siteUrl}/he/ai-system`,
+    images: [{ url: `${siteUrl}/opengraph-image.png`, width: 1200, height: 630, alt: 'נציג שיחות AI | פרוסאס' }],
   },
 }
 
 export default function HeAISystemPage() {
   return (
-    <SEOPageLayout lang="he">
+    <SEOPageLayout lang="he" alternateUrl="/ai-call-center">
       <div className="bg-gradient-to-br from-blue-50 via-white to-blue-100" dir="rtl">
         <section className="max-w-6xl mx-auto px-4 py-16 md:py-24">
           <div className="max-w-3xl">

@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     title: 'AI Answering Service | ProSaaS',
     description: '24/7 automated phone answering with AI. Every call answered, every lead captured.',
     type: 'website',
+    url: '/ai-answering-service',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'AI Answering Service | ProSaaS' }],
   },
 }
 

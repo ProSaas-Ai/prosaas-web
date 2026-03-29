@@ -18,12 +18,14 @@ export const metadata: Metadata = {
     title: 'ProSaaS Blog | AI, CRM & Business Automation Insights',
     description: 'Expert insights on AI automation, CRM, and business communication.',
     type: 'website',
+    url: '/blog',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'ProSaaS Blog' }],
   },
 }
 
 export default function BlogPage() {
   return (
-    <SEOPageLayout>
+    <SEOPageLayout alternateUrl="/he/blog">
       <div className="max-w-6xl mx-auto px-4 py-16">
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">ProSaaS Blog</h1>

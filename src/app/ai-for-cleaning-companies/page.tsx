@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     title: 'AI for Cleaning Companies | ProSaaS',
     description: 'Automate booking inquiries, quote requests, and appointment reminders for cleaning companies.',
     type: 'website',
+    url: '/ai-for-cleaning-companies',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'AI for Cleaning Companies | ProSaaS' }],
   },
 }
 

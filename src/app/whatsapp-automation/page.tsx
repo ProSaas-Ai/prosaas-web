@@ -9,11 +9,14 @@ export const metadata: Metadata = {
   keywords: 'whatsapp automation for business, whatsapp bot, whatsapp AI, automated whatsapp messages, whatsapp CRM integration, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: {
     canonical: '/whatsapp-automation',
+    languages: { 'en': '/whatsapp-automation', 'he': '/he/whatsapp-bot' },
   },
   openGraph: {
     title: 'WhatsApp Automation for Business | ProSaaS',
     description: 'Automate WhatsApp business communications with AI. Handle inquiries, qualify leads, and route conversations 24/7.',
     type: 'website',
+    url: '/whatsapp-automation',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'WhatsApp Automation for Business | ProSaaS' }],
   },
 }
 
@@ -42,7 +45,7 @@ const faqItems = [
 
 export default function WhatsAppAutomationPage() {
   return (
-    <SEOPageLayout>
+    <SEOPageLayout alternateUrl="/he/whatsapp-bot">
       <StructuredData type="faq" items={faqItems} />
       <div className="bg-gradient-to-br from-green-50 via-white to-blue-50">
         <section className="max-w-6xl mx-auto px-4 py-16 md:py-24">

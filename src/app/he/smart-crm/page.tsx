@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import SEOPageLayout from '../../../components/SEOPageLayout'
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://prosaas.website'
+import { siteUrl } from '@/lib/site-url'
 
 export const metadata: Metadata = {
   title: 'CRM חכם לעסקים | פרוסאס – ניהול לידים ולקוחות עם AI',
@@ -20,12 +19,14 @@ export const metadata: Metadata = {
     description: 'CRM חכם עם AI לניהול לידים ולקוחות אוטומטי.',
     type: 'website',
     locale: 'he_IL',
+    url: `${siteUrl}/he/smart-crm`,
+    images: [{ url: `${siteUrl}/opengraph-image.png`, width: 1200, height: 630, alt: 'CRM חכם לעסקים | פרוסאס' }],
   },
 }
 
 export default function HeCRMPage() {
   return (
-    <SEOPageLayout lang="he">
+    <SEOPageLayout lang="he" alternateUrl="/ai-crm">
       <div className="bg-gradient-to-br from-indigo-50 via-white to-blue-100" dir="rtl">
         <section className="max-w-6xl mx-auto px-4 py-16 md:py-24">
           <div className="max-w-3xl">

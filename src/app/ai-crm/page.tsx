@@ -9,11 +9,14 @@ export const metadata: Metadata = {
   keywords: 'crm with ai, ai crm system, smart crm, ai customer management, automated crm, lead management ai, ProSaaS, PROSAAS, פרוסאס, פרו סאס',
   alternates: {
     canonical: '/ai-crm',
+    languages: { 'en': '/ai-crm', 'he': '/he/smart-crm' },
   },
   openGraph: {
     title: 'AI CRM System | ProSaaS',
     description: 'Smart CRM with built-in AI automation for contact management, automated follow-ups, and AI-powered insights.',
     type: 'website',
+    url: '/ai-crm',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'AI CRM System | ProSaaS' }],
   },
 }
 
@@ -42,7 +45,7 @@ const faqItems = [
 
 export default function AICRMPage() {
   return (
-    <SEOPageLayout>
+    <SEOPageLayout alternateUrl="/he/smart-crm">
       <StructuredData type="faq" items={faqItems} />
       <div className="bg-gradient-to-br from-blue-50 via-white to-indigo-100">
         <section className="max-w-6xl mx-auto px-4 py-16 md:py-24">

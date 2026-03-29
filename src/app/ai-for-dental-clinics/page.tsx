@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     title: 'AI for Dental Clinics | ProSaaS',
     description: 'Automate dental clinic appointment booking, patient reminders, and communications with AI.',
     type: 'website',
+    url: '/ai-for-dental-clinics',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'AI for Dental Clinics | ProSaaS' }],
   },
 }
 

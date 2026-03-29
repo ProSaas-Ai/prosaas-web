@@ -2,8 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import SEOPageLayout from '../../../components/SEOPageLayout'
 import { blogPostsHe } from '../../../lib/blog-posts-he'
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://prosaas.website'
+import { siteUrl } from '@/lib/site-url'
 
 export const metadata: Metadata = {
   title: 'בלוג פרוסאס | תובנות על AI, CRM ואוטומציה עסקית',
@@ -22,6 +21,8 @@ export const metadata: Metadata = {
     description: 'תובנות מקצועיות על אוטומציה AI, CRM ותקשורת עסקית.',
     type: 'website',
     locale: 'he_IL',
+    url: `${siteUrl}/he/blog`,
+    images: [{ url: `${siteUrl}/opengraph-image.png`, width: 1200, height: 630, alt: 'בלוג פרוסאס | AI, CRM ואוטומציה עסקית' }],
   },
 }
 

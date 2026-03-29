@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import SEOPageLayout from '../../../components/SEOPageLayout'
 import StructuredData from '../../../components/StructuredData'
 import { blogPosts, getBlogPost, getAllBlogSlugs } from '../../../lib/blog-posts'
+import { siteUrl } from '@/lib/site-url'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -17,7 +18,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const post = getBlogPost(slug)
   if (!post) return {}
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://prosaas.website'
   return {
     title: post.title,
     description: post.description,
@@ -28,6 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       publishedTime: post.date,
       url: `${siteUrl}/blog/${slug}`,
+      images: [{ url: `${siteUrl}/opengraph-image.png`, width: 1200, height: 630, alt: post.title }],
     },
   }
 }
@@ -36,23 +37,33 @@ function renderMarkdown(content: string) {
   const lines = content.trim().split('\n')
   const elements: React.ReactNode[] = []
   let key = 0
+  let i = 0
 
-  for (let i = 0; i < lines.length; i++) {
+  while (i < lines.length) {
     const line = lines[i]
     if (line.startsWith('## ')) {
       elements.push(<h2 key={key++} className="text-2xl md:text-3xl font-bold text-gray-900 mt-10 mb-4">{line.slice(3)}</h2>)
+      i++
     } else if (line.startsWith('### ')) {
       elements.push(<h3 key={key++} className="text-xl font-bold text-gray-900 mt-6 mb-3">{line.slice(4)}</h3>)
+      i++
     } else if (line.startsWith('**') && line.endsWith('**') && line.length > 4) {
       elements.push(<p key={key++} className="font-semibold text-gray-900 mt-4 mb-2">{line.slice(2, -2)}</p>)
+      i++
     } else if (line.startsWith('- ')) {
-      elements.push(<li key={key++} className="ml-6 text-lg text-gray-700 leading-relaxed list-disc mb-1">{line.slice(2)}</li>)
+      const listItems: React.ReactNode[] = []
+      while (i < lines.length && lines[i].startsWith('- ')) {
+        listItems.push(<li key={key++} className="text-lg text-gray-700 leading-relaxed mb-1">{lines[i].slice(2)}</li>)
+        i++
+      }
+      elements.push(<ul key={key++} className="ml-6 list-disc mb-4">{listItems}</ul>)
     } else if (line.startsWith('| ') && line.includes('|')) {
-      // skip table rows (simplified)
+      i++ // skip table rows (simplified)
     } else if (line.trim() === '') {
-      // skip empty lines
+      i++ // skip empty lines
     } else {
       elements.push(<p key={key++} className="text-lg text-gray-700 leading-relaxed mb-4">{line}</p>)
+      i++
     }
   }
   return elements
@@ -63,11 +74,10 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getBlogPost(slug)
   if (!post) notFound()
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://prosaas.website'
   const relatedPosts = blogPosts.filter(p => p.slug !== slug).slice(0, 3)
 
   return (
-    <SEOPageLayout>
+    <SEOPageLayout alternateUrl="/he/blog">
       <StructuredData
         type="article"
         headline={post.title}

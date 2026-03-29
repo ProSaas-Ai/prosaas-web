@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     title: 'AI for Property Management | ProSaaS',
     description: 'Automate tenant inquiries, maintenance requests, and rent reminders with AI.',
     type: 'website',
+    url: '/ai-for-property-management',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'AI for Property Management | ProSaaS' }],
   },
 }
 

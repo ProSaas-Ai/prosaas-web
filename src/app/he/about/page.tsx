@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import SEOPageLayout from '../../../components/SEOPageLayout'
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://prosaas.website'
+import { siteUrl } from '@/lib/site-url'
 
 export const metadata: Metadata = {
   title: 'אודות פרוסאס | פלטפורמת תקשורת עסקית מבוססת AI',
@@ -20,6 +19,8 @@ export const metadata: Metadata = {
     description: 'הפלטפורמה הישראלית לאוטומציה של תקשורת עסקית מבוססת AI.',
     type: 'website',
     locale: 'he_IL',
+    url: `${siteUrl}/he/about`,
+    images: [{ url: `${siteUrl}/opengraph-image.png`, width: 1200, height: 630, alt: 'אודות פרוסאס | ProSaaS' }],
   },
 }
 
