@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     title: 'AI for Moving Companies | ProSaaS',
     description: 'Handle more moving inquiries, book more jobs, and manage customers automatically with AI.',
     type: 'website',
+    url: '/ai-for-moving-companies',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'AI for Moving Companies | ProSaaS' }],
   },
 }
 

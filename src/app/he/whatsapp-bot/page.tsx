@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     description: 'נציג לוואטסאפ אוטומטי — מענה מיידי 24/7, לכידת לידים וסינון אוטומטי.',
     type: 'website',
     locale: 'he_IL',
+    url: `${siteUrl}/he/whatsapp-bot`,
+    images: [{ url: `${siteUrl}/opengraph-image.png`, width: 1200, height: 630, alt: 'בוט ווצאפ חכם לעסקים | פרוסאס' }],
   },
 }
 

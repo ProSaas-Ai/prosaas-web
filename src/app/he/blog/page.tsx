@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     description: 'תובנות מקצועיות על אוטומציה AI, CRM ותקשורת עסקית.',
     type: 'website',
     locale: 'he_IL',
+    url: `${siteUrl}/he/blog`,
+    images: [{ url: `${siteUrl}/opengraph-image.png`, width: 1200, height: 630, alt: 'בלוג פרוסאס | AI, CRM ואוטומציה עסקית' }],
   },
 }
 

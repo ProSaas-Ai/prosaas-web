@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     description: 'נציג שיחות AI שעונה לכל שיחה נכנסת 24/7, מנהל שיחה טבעית בעברית ושומר הכל ב-CRM.',
     type: 'website',
     locale: 'he_IL',
+    url: `${siteUrl}/he/ai-system`,
+    images: [{ url: `${siteUrl}/opengraph-image.png`, width: 1200, height: 630, alt: 'נציג שיחות AI | פרוסאס' }],
   },
 }
 

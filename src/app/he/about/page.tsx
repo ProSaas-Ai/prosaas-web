@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     description: 'הפלטפורמה הישראלית לאוטומציה של תקשורת עסקית מבוססת AI.',
     type: 'website',
     locale: 'he_IL',
+    url: `${siteUrl}/he/about`,
+    images: [{ url: `${siteUrl}/opengraph-image.png`, width: 1200, height: 630, alt: 'אודות פרוסאס | ProSaaS' }],
   },
 }
 

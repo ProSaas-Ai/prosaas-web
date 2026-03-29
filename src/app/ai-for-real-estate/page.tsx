@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     title: 'AI for Real Estate Agents | ProSaaS',
     description: 'Never miss a property inquiry. AI handles calls, WhatsApp, and books viewings automatically.',
     type: 'website',
+    url: '/ai-for-real-estate',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'AI for Real Estate Agents | ProSaaS' }],
   },
 }
 

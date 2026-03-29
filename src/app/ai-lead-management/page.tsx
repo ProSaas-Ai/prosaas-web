@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     title: 'AI Lead Management | ProSaaS',
     description: 'Capture, qualify, and follow up on every lead automatically with AI.',
     type: 'website',
+    url: '/ai-lead-management',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'AI Lead Management | ProSaaS' }],
   },
 }
 

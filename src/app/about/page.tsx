@@ -11,6 +11,8 @@ export const metadata: Metadata = {
     title: 'About ProSaaS',
     description: 'The Israeli-built AI platform for business communication automation.',
     type: 'website',
+    url: '/about',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'About ProSaaS' }],
   },
 }
 

@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     title: 'AI CRM System | ProSaaS',
     description: 'Smart CRM with built-in AI automation for contact management, automated follow-ups, and AI-powered insights.',
     type: 'website',
+    url: '/ai-crm',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'AI CRM System | ProSaaS' }],
   },
 }
 

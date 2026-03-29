@@ -18,6 +18,8 @@ export const metadata: Metadata = {
     title: 'ProSaaS Blog | AI, CRM & Business Automation Insights',
     description: 'Expert insights on AI automation, CRM, and business communication.',
     type: 'website',
+    url: '/blog',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'ProSaaS Blog' }],
   },
 }
 

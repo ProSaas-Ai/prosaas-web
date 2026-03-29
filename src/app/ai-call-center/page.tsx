@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     title: 'AI Call Center Software | ProSaaS',
     description: 'AI-powered call center software with a natural voice bot that handles inbound calls 24/7 and syncs to your CRM.',
     type: 'website',
+    url: '/ai-call-center',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'AI Call Center Software | ProSaaS' }],
   },
 }
 

@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     description: 'CRM חכם עם AI לניהול לידים ולקוחות אוטומטי.',
     type: 'website',
     locale: 'he_IL',
+    url: `${siteUrl}/he/smart-crm`,
+    images: [{ url: `${siteUrl}/opengraph-image.png`, width: 1200, height: 630, alt: 'CRM חכם לעסקים | פרוסאס' }],
   },
 }
 

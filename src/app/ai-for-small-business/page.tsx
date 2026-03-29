@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     title: 'AI for Small Business | ProSaaS',
     description: 'Enterprise AI automation for small businesses starting from ₪600/month.',
     type: 'website',
+    url: '/ai-for-small-business',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'AI for Small Business | ProSaaS' }],
   },
 }
 

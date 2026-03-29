@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     title: 'WhatsApp Automation for Business | ProSaaS',
     description: 'Automate WhatsApp business communications with AI. Handle inquiries, qualify leads, and route conversations 24/7.',
     type: 'website',
+    url: '/whatsapp-automation',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'WhatsApp Automation for Business | ProSaaS' }],
   },
 }
 
