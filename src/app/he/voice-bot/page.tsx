@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function HeVoiceBotPage() {
   return (
-    <SEOPageLayout lang="he" alternateUrl="/ai-call-center">
+    <SEOPageLayout lang="he">
       <div className="bg-gradient-to-br from-blue-50 via-white to-purple-50" dir="rtl">
         <section className="max-w-6xl mx-auto px-4 py-16 md:py-24">
           <div className="max-w-3xl">
@@ -107,13 +107,22 @@ export default function HeVoiceBotPage() {
               'לא צריך להכשיר, לא לנהל, לא לשלם על שעות עבודה',
               'כל לקוח מקבל חוויה עקבית ומקצועית בכל שיחה',
               'נתוני שיחות בזמן אמת — אנליטיקס מפורט לשיפור מתמיד',
-              'משתלב עם <a href="/he/whatsapp-bot" class="text-blue-600 hover:underline">בוט הוואטסאפ</a> ו-<a href="/he/smart-crm" class="text-blue-600 hover:underline">CRM החכם</a> לפתרון מלא',
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-lg text-gray-700">
                 <span className="text-blue-600 mt-1 flex-shrink-0">✓</span>
-                <span dangerouslySetInnerHTML={{ __html: item }} />
+                <span>{item}</span>
               </li>
             ))}
+            <li className="flex items-start gap-3 text-lg text-gray-700">
+              <span className="text-blue-600 mt-1 flex-shrink-0">✓</span>
+              <span>
+                משתלב עם{' '}
+                <Link href="/he/whatsapp-bot" className="text-blue-600 hover:underline">בוט הוואטסאפ</Link>
+                {' '}ו-
+                <Link href="/he/smart-crm" className="text-blue-600 hover:underline">CRM החכם</Link>
+                {' '}לפתרון מלא
+              </span>
+            </li>
           </ul>
         </section>
 
