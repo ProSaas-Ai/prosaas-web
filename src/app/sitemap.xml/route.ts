@@ -61,7 +61,7 @@ export async function GET() {
     { url: `${u}/he/whatsapp-bot`,lastModified: '2026-04-01', changeFrequency: 'monthly', priority: 0.9, alternates: bilingual(`${u}/he/whatsapp-bot`, `${u}/whatsapp-automation`) },
 
     // New Hebrew SEO pages
-    { url: `${u}/he/voice-bot`,                        lastModified: '2026-04-14', changeFrequency: 'monthly', priority: 0.9, alternates: bilingual(`${u}/he/voice-bot`, `${u}/ai-call-center`) },
+    { url: `${u}/he/voice-bot`,                        lastModified: '2026-04-14', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${u}/he/ai-sales-agent`,                   lastModified: '2026-04-14', changeFrequency: 'monthly', priority: 0.85 },
     { url: `${u}/he/customer-service-bot`,             lastModified: '2026-04-14', changeFrequency: 'monthly', priority: 0.85 },
     { url: `${u}/he/whatsapp-bot-for-moving-companies`,lastModified: '2026-04-14', changeFrequency: 'monthly', priority: 0.8 },

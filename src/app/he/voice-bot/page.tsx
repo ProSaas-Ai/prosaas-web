@@ -11,7 +11,6 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/he/voice-bot`,
     languages: {
       he: `${siteUrl}/he/voice-bot`,
-      en: `${siteUrl}/ai-call-center`,
     },
   },
   openGraph: {

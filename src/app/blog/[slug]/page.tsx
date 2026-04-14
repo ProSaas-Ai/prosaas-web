@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: `/blog/${slug}` },
+    alternates: { canonical: `${siteUrl}/blog/${slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
@@ -31,6 +31,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [{ url: `${siteUrl}/opengraph-image.png`, width: 1200, height: 630, alt: post.title }],
     },
   }
+}
+
+function parseInlineLinks(text: string): React.ReactNode {
+  const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g
+  const parts: React.ReactNode[] = []
+  let lastIndex = 0
+  let match: RegExpExecArray | null
+
+  while ((match = linkPattern.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index))
+    }
+    parts.push(
+      <Link key={match.index} href={match[2]} className="text-blue-600 hover:underline font-medium">
+        {match[1]}
+      </Link>
+    )
+    lastIndex = linkPattern.lastIndex
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex))
+  }
+
+  return parts.length === 0 ? text : parts.length === 1 ? parts[0] : <>{parts}</>
 }
 
 function renderMarkdown(content: string) {
@@ -48,12 +73,12 @@ function renderMarkdown(content: string) {
       elements.push(<h3 key={key++} className="text-xl font-bold text-gray-900 mt-6 mb-3">{line.slice(4)}</h3>)
       i++
     } else if (line.startsWith('**') && line.endsWith('**') && line.length > 4) {
-      elements.push(<p key={key++} className="font-semibold text-gray-900 mt-4 mb-2">{line.slice(2, -2)}</p>)
+      elements.push(<p key={key++} className="font-semibold text-gray-900 mt-4 mb-2">{parseInlineLinks(line.slice(2, -2))}</p>)
       i++
     } else if (line.startsWith('- ')) {
       const listItems: React.ReactNode[] = []
       while (i < lines.length && lines[i].startsWith('- ')) {
-        listItems.push(<li key={key++} className="text-lg text-gray-700 leading-relaxed mb-1">{lines[i].slice(2)}</li>)
+        listItems.push(<li key={key++} className="text-lg text-gray-700 leading-relaxed mb-1">{parseInlineLinks(lines[i].slice(2))}</li>)
         i++
       }
       elements.push(<ul key={key++} className="ml-6 list-disc mb-4">{listItems}</ul>)
@@ -62,7 +87,7 @@ function renderMarkdown(content: string) {
     } else if (line.trim() === '') {
       i++ // skip empty lines
     } else {
-      elements.push(<p key={key++} className="text-lg text-gray-700 leading-relaxed mb-4">{line}</p>)
+      elements.push(<p key={key++} className="text-lg text-gray-700 leading-relaxed mb-4">{parseInlineLinks(line)}</p>)
       i++
     }
   }
