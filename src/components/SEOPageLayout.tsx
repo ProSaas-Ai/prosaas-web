@@ -69,6 +69,9 @@ export default function SEOPageLayout({ children, lang = 'en', alternateUrl }: S
                       <li><Link href="/he/ai-system" className="text-gray-400 hover:text-white transition text-sm">מוקד שיחות AI</Link></li>
                       <li><Link href="/he/whatsapp-bot" className="text-gray-400 hover:text-white transition text-sm">בוט וואטסאפ</Link></li>
                       <li><Link href="/he/smart-crm" className="text-gray-400 hover:text-white transition text-sm">CRM חכם</Link></li>
+                      <li><Link href="/he/voice-bot" className="text-gray-400 hover:text-white transition text-sm">בוט קולי</Link></li>
+                      <li><Link href="/he/ai-sales-agent" className="text-gray-400 hover:text-white transition text-sm">נציג מכירות</Link></li>
+                      <li><Link href="/he/customer-service-bot" className="text-gray-400 hover:text-white transition text-sm">נציג שירות</Link></li>
                     </>
                   ) : (
                     <>

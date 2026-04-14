@@ -42,13 +42,13 @@ A lead expresses interest but isn't ready to buy immediately. Without a systemat
 ## How AI Fixes Each Problem
 
 ### Eliminating Missed Calls
-An AI voice bot answers every call, regardless of the time. It greets callers professionally, collects their information, answers common questions, and either resolves their need or logs them for follow-up. No more missed opportunities.
+An [AI voice bot](/ai-call-center) answers every call, regardless of the time. It greets callers professionally, collects their information, answers common questions, and either resolves their need or logs them for follow-up. No more missed opportunities.
 
 ### Instant WhatsApp Response
-An AI WhatsApp bot responds to messages within seconds, 24/7. Even at 11pm, a customer gets an immediate, helpful response. This dramatically increases the chance of capturing that lead.
+A [WhatsApp automation bot](/whatsapp-automation) responds to messages within seconds, 24/7. Even at 11pm, a customer gets an immediate, helpful response. This dramatically increases the chance of capturing that lead.
 
 ### Centralized Lead Tracking
-AI-powered CRM software captures leads from all channels automatically. Every inquiry — regardless of source — appears in one dashboard with full details and status. Nothing falls through the cracks.
+[AI-powered CRM software](/ai-crm) captures leads from all channels automatically. Every inquiry — regardless of source — appears in one dashboard with full details and status. Nothing falls through the cracks.
 
 ### Automated Follow-Up Sequences
 AI can send scheduled follow-up messages to leads who haven't converted. A series of WhatsApp messages at day 1, day 3, and day 7 can re-engage leads who went quiet — without any manual effort.
@@ -232,12 +232,12 @@ Multiple studies have shown a direct correlation between response time and conve
 - Responding within 5 minutes: still 3x better than 30-minute response
 - After 1 hour: conversion rates drop dramatically
 
-For most businesses using WhatsApp manually, average response time is 2-4 hours. With automation, response time drops to under 2 seconds.
+For most businesses using WhatsApp manually, average response time is 2-4 hours. With [WhatsApp automation](/whatsapp-automation), response time drops to under 2 seconds.
 
 ## How WhatsApp Automation Drives Sales
 
 ### 1. First-Response Advantage
-In competitive industries, the first business to respond usually wins the customer. WhatsApp automation ensures you're always first — even at 11pm when a customer is researching their options.
+In competitive industries, the first business to respond usually wins the customer. [WhatsApp automation](/whatsapp-automation) ensures you're always first — even at 11pm when a customer is researching their options.
 
 ### 2. Lead Qualification at Scale
 Manual lead qualification takes time — your team can only handle a certain volume. WhatsApp automation qualifies every lead simultaneously, asking the right questions and scoring prospects automatically. Your team only sees qualified, ready-to-buy leads.
@@ -253,7 +253,7 @@ For e-commerce and service businesses, automated WhatsApp reminders to customers
 
 ## Real Results: What Businesses Are Seeing
 
-Businesses implementing WhatsApp automation consistently report:
+Businesses implementing [WhatsApp automation](/whatsapp-automation) consistently report:
 - **30-40% increase in lead conversion** from faster response
 - **50-60% reduction in time spent on manual messaging**
 - **25-35% improvement in appointment show rates** from automated reminders
@@ -271,14 +271,14 @@ Create message sequences that ask qualifying questions automatically. By the tim
 WhatsApp broadcast to opted-in customers is powerful but requires restraint. Relevant, valuable messages get high engagement; spam-like messages get blocked.
 
 ### Integrate with Your CRM
-WhatsApp conversations without CRM integration are just chat. When every conversation is automatically logged, you have a complete picture of every customer relationship.
+WhatsApp conversations without [CRM integration](/ai-crm) are just chat. When every conversation is automatically logged, you have a complete picture of every customer relationship.
 
 ## Getting Started with WhatsApp Automation
 
 The technical barrier to WhatsApp automation has dropped significantly. Platforms like ProSaaS provide:
-- WhatsApp Business API integration
+- [WhatsApp Business API integration](/whatsapp-automation)
 - Pre-built conversation flows
-- CRM synchronization
+- [CRM synchronization](/ai-crm)
 - Analytics and reporting
 
 Setup typically takes 3-5 days, and the impact on lead conversion is usually visible within the first week.
@@ -340,7 +340,7 @@ Configure follow-up sequences once, and the AI executes them perfectly every tim
 See exactly where every lead stands in your sales process. Drag-and-drop pipeline management shows your entire business at a glance. The AI flags leads that need attention and predicts which deals will close.
 
 ### Integration with Communication Channels
-AI CRM doesn't live in a silo. It connects to your phone system, WhatsApp Business account, and email. Every communication channel feeds into one central view of each customer relationship.
+[AI CRM](/ai-crm) doesn't live in a silo. It connects to your [phone system](/ai-call-center), [WhatsApp Business account](/whatsapp-automation), and email. Every communication channel feeds into one central view of each customer relationship.
 
 ## Who Needs AI CRM?
 
@@ -427,7 +427,7 @@ Configure your AI to send an instant acknowledgment with an expected response ti
 
 ## 2. 24/7 AI Call Answering
 
-Human call centers have limited hours. An AI voice bot is available every hour of every day. After-hours calls — which represent a significant portion of total inquiries — are answered immediately rather than going to voicemail.
+Human call centers have limited hours. An [AI voice bot](/ai-call-center) is available every hour of every day. After-hours calls — which represent a significant portion of total inquiries — are answered immediately rather than going to voicemail.
 
 ## 3. Automated WhatsApp Responses
 
@@ -659,17 +659,17 @@ Rank these by impact. Your highest-ranking problem is where to start with AI.
 ## The Three AI Capabilities Every Small Business Needs
 
 ### 1. AI Call Answering
-If your business receives phone calls, a 24/7 AI voice bot is the single highest-impact automation you can implement. Every missed call is a potential customer going to a competitor. An AI that answers calls, collects information, and sends you instant summaries eliminates this problem completely.
+If your business receives phone calls, a 24/7 [AI voice bot](/ai-call-center) is the single highest-impact automation you can implement. Every missed call is a potential customer going to a competitor. An AI that answers calls, collects information, and sends you instant summaries eliminates this problem completely.
 
 *Best for*: Any business that receives customer calls — trades, clinics, services, retail
 
 ### 2. WhatsApp Automation  
-If customers WhatsApp you (and in Israel, they do), automated responses during off-hours and for common questions saves hours every week and captures leads you'd otherwise lose.
+If customers WhatsApp you (and in Israel, they do), [automated WhatsApp responses](/whatsapp-automation) during off-hours and for common questions saves hours every week and captures leads you'd otherwise lose.
 
 *Best for*: Any business receiving 10+ WhatsApp inquiries per week
 
 ### 3. AI CRM
-If you're tracking leads in your head, on paper, or in a spreadsheet, you're losing follow-up opportunities daily. An AI CRM captures leads automatically and ensures systematic follow-up.
+If you're tracking leads in your head, on paper, or in a spreadsheet, you're losing follow-up opportunities daily. An [AI CRM](/ai-crm) captures leads automatically and ensures systematic follow-up.
 
 *Best for*: Any business with a sales process lasting more than one conversation
 
@@ -862,7 +862,7 @@ If missed calls are so costly, why do businesses still miss them? Common reasons
 
 ## The Solution: AI Call Answering
 
-The only way to answer 100% of calls is with an AI voice bot that operates 24/7. This isn't a future technology — it's available today, at a fraction of the cost of hiring additional staff.
+The only way to answer 100% of calls is with an [AI answering service](/ai-answering-service) that operates 24/7. This isn't a future technology — it's available today, at a fraction of the cost of hiring additional staff.
 
 An AI call answering system:
 - Answers every call within 2 rings
@@ -877,7 +877,7 @@ The cost: ₪600-₪1,500/month. The value: potentially tens of thousands of she
 
 ## The Math Is Compelling
 
-For a business losing ₪20,000/month to missed calls, a ₪1,000/month AI answering service provides 20x ROI. Even for businesses with more modest missed-call losses, the ROI is typically 5-10x.
+For a business losing ₪20,000/month to missed calls, a ₪1,000/month [AI answering service](/ai-answering-service) provides 20x ROI. Even for businesses with more modest missed-call losses, the ROI is typically 5-10x.
 
 The question isn't whether AI call answering is worth the investment. The question is: how many more months can you afford to miss those calls?
 
